@@ -33,6 +33,7 @@ public class MainKeyboardView extends ConstraintLayoutWithSidebar {
         actionListener = new MainKeypadActionListener((MainInputMethodService) context, this);
         setupMainKeyboardView(context);
         setupButtonsOnSideBar(actionListener);
+        setupSwitchToClipboardKeypadButton();
         setColors();
         setHapticFeedbackEnabled(true);
 
